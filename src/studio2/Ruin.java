@@ -10,15 +10,15 @@ public class Ruin {
 		double winChance = in.nextDouble();
 		
 		double winlimit = in.nextDouble();
-		for (int totalSimulation = 1, totalSimulation <10, totalSimulation ++) {
-		while (startAmount>0 && winlimit> startAmount) {
-			if (winChance> Math.random()) 
+		for (int totalSimulation = 1; totalSimulation <10; totalSimulation ++)
+		{
+		    while (startAmount>0 && winlimit> startAmount) {
+			if (winChance> Math.random()) {
 				startAmount = startAmount+1;
 			}
 			else {
 				startAmount = startAmount-1;
 			}
-		}
 		if (startAmount = 0) {
 	         System.out.println("ruin");
 	     }
@@ -26,6 +26,7 @@ public class Ruin {
 	     {
 	         System.out.println("success");
 	     }
+	  }
 	}
-
+	}
 }
